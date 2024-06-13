@@ -44,7 +44,18 @@ class BinaryTree {
         if (element < parent->info) //If the value in the data field of the new node is less than that of the parent 
         {
             parent->leftchild = newNode; //Make the left child of the parent point to the new node 
-
         }
+
+        else if (element > parent->info) //If the value in the data field of the new node is grater than that
+        {
+            parent->rightchild = newNode; //Make the right child of the parent point to the new node
+        }
+    }
+
+    void search(string element, Node*& parent, Node*& currentNode){
+        //This function searches the currentNode of the specified node as well as the current Node of its pare
+        currentNode =ROOT;
+        parent = NULL;
+        
     }
 };
