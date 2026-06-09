@@ -97,3 +97,7 @@ class BinaryTree {
         }
     }
 };
+
+int main(){
+    BinaryTree x;
+    while (true){
