@@ -138,3 +138,15 @@ int main(){
                 x.postorder(x.ROOT);
                 break;
             }
+            case '5': 
+            {
+                return 0; // Mengakhiri program dengan sukses
+            }
+            default:
+            {
+                cout << "Invalid option" << endl;
+                break;
+            }
+        } 
+    } 
+} 
