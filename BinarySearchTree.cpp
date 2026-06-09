@@ -23,4 +23,13 @@ class BinaryTree {
         BinaryTree() {
             ROOT = nullptr; // Initializing ROOT to null
         }
-    };
+
+    void insert(string element) //Insert a node in the binary search tree
+    {
+        Node* newNode = new Node(element, nullptr, nullptr); //Allocate memory for the new node
+
+        Node* parent = nullptr;
+        Node* currentNode = nullptr;
+        search(element, parent, currentNode); //Locate the new node wich will be the parent of the node to be insert
+    }
+};
