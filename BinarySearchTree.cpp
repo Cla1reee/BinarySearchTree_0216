@@ -84,4 +84,16 @@ class BinaryTree {
             preorder(ptr->rightchild); //RIGHT
         }
     }
+
+    void postorder(Node* ptr){
+        if (ROOT == nullptr){
+            cout << "Tree is empty" << endl;
+            return;
+        }
+        if (ptr != nullptr){
+            postorder(ptr->leftchild); //LEFT
+            postorder(ptr->rightchild); //RIGHT
+            cout << ptr->info << " "; //ROOT
+        }
+    }
 };
