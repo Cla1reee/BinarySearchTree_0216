@@ -108,3 +108,18 @@ int main(){
         cout << "4. Perform postorder traversal" << endl;
         cout << "5. Exit" << endl;
         cout << "\nEnter your choice (1-5) : ";
+
+        char ch;
+        cin >> ch;
+        cout << endl;
+
+        switch (ch)
+        {
+            case '1':
+            {
+                cout << "Enter a word: ";
+                string word;
+                cin >> word;
+                x.insert(word);
+                break;
+            }
